@@ -1,105 +1,120 @@
-<!DOCTYPE html><html lang="kk">
+<!DOCTYPE html>
+<html lang="kk">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tamshy – Қаржылық сауаттылық платформасы</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-white text-gray-800 font-sans">  <!-- Навигация -->  <header class="bg-blue-900 text-white p-4 shadow">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Tamshy</h1>
-      <nav class="space-x-4">
-        <a href="#home" class="hover:underline">Басты бет</a>
-        <a href="#services" class="hover:underline">Қызметтер</a>
-        <a href="#courses" class="hover:underline">Курстар</a>
-        <a href="#calculator" class="hover:underline">Калькулятор</a>
-        <a href="#form" class="hover:underline">Форма</a>
-        <a href="#contact" class="hover:underline">Байланыс</a>
+<body>
+  <!-- Навигация -->
+  <header>
+    <div class="container">
+      <h1>Tamshy</h1>
+      <nav>
+        <a href="#home">Басты бет</a>
+        <a href="#services">Қызметтер</a>
+        <a href="#courses">Курстар</a>
+        <a href="#calculator">Калькулятор</a>
+        <a href="#form">Форма</a>
+        <a href="#contact">Байланыс</a>
       </nav>
     </div>
-  </header>  <!-- Хиро секция -->  <section id="home" class="bg-blue-50 py-20 text-center">
-    <h2 class="text-4xl font-bold mb-4">Tamshy – Қаржылық сауаттылыққа алғашқы қадам</h2>
-    <p class="text-lg mb-6 max-w-2xl mx-auto">Tamshy – жастарға арналған қаржы және IT бағытындағы оқыту платформасы. Әрбір тамшы білім – болашақтағы үлкен өзенге айналады.</p>
-    <a href="#courses" class="bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800">Курстарды бастау</a>
-  </section>  <!-- Қызметтер -->  <section id="services" class="bg-gray-100 py-12">
-    <div class="container mx-auto px-4">
-      <h3 class="text-2xl font-semibold mb-6 text-center">Біз не ұсынамыз?</h3>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded shadow">
-          <h4 class="text-xl font-semibold mb-2">Қаржылық сауаттылық курстары</h4>
-          <p>Негізгі қаржы түсініктері, бюджет құру, табыс пен шығынды басқару.</p>
-        </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h4 class="text-xl font-semibold mb-2">Онлайн бюджет құралдары</h4>
-          <p>Табысыңыз бен шығыныңызды бақылауға көмектесетін калькуляторлар мен шаблондар.</p>
-        </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h4 class="text-xl font-semibold mb-2">AI-Кеңесші бот</h4>
-          <p>Қаржы сұрақтарына жылдам жауап беретін смарт көмекші.</p>
-        </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h4 class="text-xl font-semibold mb-2">Оффлайн семинарлар</h4>
-          <p>Университеттер мен жастар ұйымдарымен бірлескен кездесулер.</p>
-        </div>
+  </header>
+
+  <!-- Хиро -->
+  <section id="home" class="hero">
+    <h2>Tamshy – Қаржылық сауаттылыққа алғашқы қадам</h2>
+    <p>Tamshy – жастарға арналған қаржы және IT бағытындағы оқыту платформасы. Әрбір тамшы білім – болашақтағы үлкен өзенге айналады.</p>
+    <a href="#courses" class="btn">Курстарды бастау</a>
+  </section>
+
+  <!-- Қызметтер -->
+  <section id="services">
+    <h3>Біз не ұсынамыз?</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Қаржылық сауаттылық курстары</h4>
+        <p>Негізгі қаржы түсініктері, бюджет құру, табыс пен шығынды басқару.</p>
+      </div>
+      <div class="card">
+        <h4>Онлайн бюджет құралдары</h4>
+        <p>Табысыңыз бен шығыныңызды бақылауға көмектесетін калькуляторлар мен шаблондар.</p>
+      </div>
+      <div class="card">
+        <h4>AI-Кеңесші бот</h4>
+        <p>Қаржы сұрақтарына жылдам жауап беретін смарт көмекші.</p>
+      </div>
+      <div class="card">
+        <h4>Оффлайн семинарлар</h4>
+        <p>Университеттер мен жастар ұйымдарымен бірлескен кездесулер.</p>
       </div>
     </div>
-  </section>  <!-- Курстар -->  <section id="courses" class="container mx-auto py-12 px-4">
-    <h3 class="text-2xl font-semibold mb-6 text-center">Қаржылық сауаттылық курстары</h3>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-blue-100 p-4 rounded shadow">
-        <h4 class="text-lg font-bold">1. Жеке бюджет негіздері</h4>
+  </section>
+
+  <!-- Курстар -->
+  <section id="courses">
+    <h3>Қаржылық сауаттылық курстары</h3>
+    <div class="grid">
+      <div class="card blue">
+        <h4>1. Жеке бюджет негіздері</h4>
         <p>Жеке табыс пен шығынды есептеуді үйрену.</p>
       </div>
-      <div class="bg-blue-100 p-4 rounded shadow">
-        <h4 class="text-lg font-bold">2. Ақша психологиясы</h4>
+      <div class="card blue">
+        <h4>2. Ақша психологиясы</h4>
         <p>Қаржылық шешімдер мен адамның мінез-құлқы.</p>
       </div>
-      <div class="bg-blue-100 p-4 rounded shadow">
-        <h4 class="text-lg font-bold">3. Инвестицияға кіріспе</h4>
+      <div class="card blue">
+        <h4>3. Инвестицияға кіріспе</h4>
         <p>Қарапайым инвестиция құралдарымен танысу.</p>
       </div>
     </div>
-  </section>  <!-- Калькулятор -->  <section id="calculator" class="container mx-auto py-12 px-4">
-    <h3 class="text-2xl font-semibold mb-4 text-center">Ай сайынғы бюджет калькуляторы</h3>
-    <div class="bg-gray-100 p-6 rounded shadow max-w-md mx-auto">
-      <label class="block mb-2">Айлық табыс (₸):</label>
-      <input id="income" type="number" class="w-full mb-4 p-2 border rounded" /><label class="block mb-2">Айлық шығын (₸):</label>
-  <input id="expenses" type="number" class="w-full mb-4 p-2 border rounded" />
+  </section>
 
-  <button onclick="calculateBudget()" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">Есептеу</button>
-  <p class="mt-4 font-bold">Қалған сома: <span id="result">0</span> ₸</p>
-</div>
-<script>
-  function calculateBudget() {
-    const income = parseFloat(document.getElementById('income').value) || 0;
-    const expenses = parseFloat(document.getElementById('expenses').value) || 0;
-    const result = income - expenses;
-    document.getElementById('result').innerText = result;
-  }
-</script>
-
-  </section>  <!-- Қатысу формасы -->  <section id="form" class="container mx-auto py-12 px-4">
-    <h3 class="text-2xl font-semibold mb-4 text-center">Курсқа жазылу</h3>
-    <form class="max-w-md mx-auto bg-gray-100 p-6 rounded shadow">
-      <label class="block mb-2">Атыңыз:</label>
-      <input type="text" class="w-full mb-4 p-2 border rounded" required /><label class="block mb-2">Email:</label>
-  <input type="email" class="w-full mb-4 p-2 border rounded" required />
-
-  <label class="block mb-2">Қызықтыратын курс:</label>
-  <select class="w-full mb-4 p-2 border rounded">
-    <option>Жеке бюджет</option>
-    <option>Ақша психологиясы</option>
-    <option>Инвестиция</option>
-  </select>
-
-  <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">Жіберу</button>
-</form>
-
-  </section>  <!-- Байланыс -->  <footer id="contact" class="bg-blue-900 text-white py-8">
-    <div class="container mx-auto px-4 text-center">
-      <h4 class="text-xl font-semibold mb-2">Байланыс</h4>
-      <p>Email: hello@tamshy.kz | Instagram: @tamshy.kz | Telegram: @TamshyBot</p>
-      <p class="mt-4 text-sm">© 2025 Tamshy. Барлық құқықтар қорғалған.</p>
+  <!-- Калькулятор -->
+  <section id="calculator">
+    <h3>Ай сайынғы бюджет калькуляторы</h3>
+    <div class="form-container">
+      <label>Айлық табыс (₸):</label>
+      <input id="income" type="number" />
+      <label>Айлық шығын (₸):</label>
+      <input id="expenses" type="number" />
+      <button onclick="calculateBudget()">Есептеу</button>
+      <p>Қалған сома: <span id="result">0</span> ₸</p>
     </div>
-  </footer></body>
+  </section>
+
+  <!-- Форма -->
+  <section id="form">
+    <h3>Курсқа жазылу</h3>
+    <form class="form-container">
+      <label>Атыңыз:</label>
+      <input type="text" required />
+      <label>Email:</label>
+      <input type="email" required />
+      <label>Қызықтыратын курс:</label>
+      <select>
+        <option>Жеке бюджет</option>
+        <option>Ақша психологиясы</option>
+        <option>Инвестиция</option>
+      </select>
+      <button type="submit">Жіберу</button>
+    </form>
+  </section>
+
+  <!-- Байланыс -->
+  <footer id="contact">
+    <h4>Байланыс</h4>
+    <p>Email: hello@tamshy.kz | Instagram: @tamshy.kz | Telegram: @TamshyBot</p>
+    <p>© 2025 Tamshy. Барлық құқықтар қорғалған.</p>
+  </footer>
+
+  <script>
+    function calculateBudget() {
+      const income = parseFloat(document.getElementById('income').value) || 0;
+      const expenses = parseFloat(document.getElementById('expenses').value) || 0;
+      document.getElementById('result').innerText = income - expenses;
+    }
+  </script>
+</body>
 </html>
